@@ -32,11 +32,34 @@
             </div>
         </div>
         
+        <div>
+            <label>Full Name</label>
+            <div>
+                <input type="text"  name="name">
+            </div>
+        </div>
+
+        <div>
+            <label>Username</label>
+            <div>
+                <input type="text"  name="username">
+            </div>
+        </div>
+
+        <div>
+            <label>Bio</label>
+            <div>
+                <input maxlength="280" type="text"  name="bio">
+            </div>
+        </div>
+
         <!-- Button -->
         <div>
             <input type="submit"/>
         </div>
     </form>
+    {{ error }}
+    attempted uname: {{ username }}
     <br>
     <a href="/"><button>signin</button></a>
 </body>
